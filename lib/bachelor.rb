@@ -5,9 +5,7 @@ require 'pry'
 def get_first_name_of_season_winner(data, season)
   data.each do |season_number, contestant_data|
     if  season.to_s == season_number.to_s
-      
-      #binding.pry
-      contestant_data.each do |contestant|
+      season.each do |contestant|
         if contestant[:status] == "Winner"
           return "test"
           first_name = contestant[:name].split
