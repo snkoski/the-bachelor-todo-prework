@@ -40,7 +40,7 @@ def get_first_name_of_season_winner(data, season)
     
      puts contestant_data[0]
       binding.pry
-    end
+    
   end
 end
 
