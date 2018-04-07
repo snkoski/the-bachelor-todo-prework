@@ -3,7 +3,8 @@ require 'pry'
 def get_first_name_of_season_winner(data, season)
   data.each do |season_number, contestant_data|
     if season_number == season
-      puts contestant_data[0]
+      contestant_data[0]
+      binding.pry
     end
   end
 end
