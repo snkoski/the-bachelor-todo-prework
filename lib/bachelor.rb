@@ -4,7 +4,6 @@ require 'pry'
 def get_first_name_of_season_winner(data, season)
   first_name = ""
   data.each do |season_number, contestant_data|
-    #binding.pry
     if season_number.to_s == season
       contestant_data.each do |contestant|
         if contestant[:status] == "Winner"
