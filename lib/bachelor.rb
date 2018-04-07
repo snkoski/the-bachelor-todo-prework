@@ -2091,4 +2091,4 @@ data = {
    ]
 }
 
-get_first_name_of_season_winner(data, "season 12")
+puts get_first_name_of_season_winner(data, "season 12")
