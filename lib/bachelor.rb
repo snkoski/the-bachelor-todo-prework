@@ -1,5 +1,6 @@
 require 'pry'
 
+let(:data) { JSON.parse(File.read('spec/fixtures/contestants.json')) }
 
 def get_first_name_of_season_winner(data, season)
   first_name = ""
@@ -17,7 +18,7 @@ def get_first_name_of_season_winner(data, season)
   first_name
 end
 
-
+get_first_name_of_season_winner(data, "season 12")
 
 def get_contestant_name(data, occupation)
   # code here
