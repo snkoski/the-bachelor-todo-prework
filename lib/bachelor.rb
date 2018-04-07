@@ -42,7 +42,7 @@ def get_first_name_of_season_winner(data, season)
         if contestant[:status] == "Winner"
           puts contestant[:name]
         end
-       #binding.pry
+       binding.pry
       end
     end
   end
