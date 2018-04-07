@@ -37,12 +37,13 @@ data = {
 
 def get_first_name_of_season_winner(data, season)
   data.each do |season_number, contestant_data|
+    binding.pry
     if season_number == season
       contestant_data.each do |contestant|
         if contestant[:status] == "Winner"
           puts contestant[:name]
         end
-       binding.pry
+       
       end
     end
   end
