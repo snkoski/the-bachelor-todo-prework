@@ -6,7 +6,7 @@ def get_first_name_of_season_winner(data, season)
   end
 end
 
-get_first_name_of_season_winner(JSON.parse(File.read('spec/fixtures/contestants.json')), "season 10")
+get_first_name_of_season_winner(data, "season 10")
 
 def get_contestant_name(data, occupation)
   # code here
