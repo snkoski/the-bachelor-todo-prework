@@ -9,6 +9,7 @@ def get_first_name_of_season_winner(data, season)
         if contestant[:status] == "Winner"
           first_name = contestant[:name].split
           first_name = first_name[0]
+          binding.pry
         end
       end
     end
