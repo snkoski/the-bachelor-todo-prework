@@ -41,7 +41,8 @@ def get_first_name_of_season_winner(data, season)
     if season_number.to_s == season
       contestant_data.each do |contestant|
         if contestant[:status] == "Winner"
-          puts contestant[:name]
+          first_name = contestant[:name].split
+          puts first_name[0]
         end
        
       end
