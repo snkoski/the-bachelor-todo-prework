@@ -37,10 +37,9 @@ data = {
 
 def get_first_name_of_season_winner(data, season)
   data.each do |season_number, contestant_data|
-    
-     puts contestant_data[0]
+    season_number.each do |contestant|
       binding.pry
-    
+    end
   end
 end
 
