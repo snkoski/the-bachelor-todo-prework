@@ -1,6 +1,6 @@
 require 'pry'
 
-data = 
+
 
 def get_first_name_of_season_winner(data, season)
   first_name = ""
@@ -35,3 +35,5 @@ end
 def get_average_age_for_season(data, season)
   # code here
 end
+
+data = 
