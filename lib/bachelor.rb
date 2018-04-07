@@ -1,12 +1,12 @@
 def get_first_name_of_season_winner(data, season)
   data.each do |season_number, contestant_data|
-    if season_number == "season #{season}"
+    if season_number == season
       puts contestant_data[0]
     end
   end
 end
 
-get_first_name_of_season_winner(JSON.parse(File.read('spec/fixtures/contestants.json')), )
+get_first_name_of_season_winner(JSON.parse(File.read('spec/fixtures/contestants.json')), "season 10")
 
 def get_contestant_name(data, occupation)
   # code here
